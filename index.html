@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr. Tana Ananto | Dermatologist in Itanagar, Arunachal Pradesh</title>
+<meta name="description" content="Dr. Tana Ananto, dermatologist at Ramakrishna Mission Hospital, Ganga Market, Itanagar. Care for acne, pigmentation, hair fall, eczema and more. Call 8837210190.">
+<meta name="theme-color" content="#12352b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--pine:#12352b;--pine2:#0b231c;--moss:#2f6b4f;--leaf:#5c9a72;--sage:#cfe0d2;--mist:#f3f6f1;--sand:#f1e7d8;--clay:#c8734f;--clay-d:#a85a39;--ink:#14231d;--mut:#5a6d63;--line:#d8e3da;--r:24px;--ease:cubic-bezier(.2,.8,.2,1);--serif:Fraunces,Georgia,serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:96px;overflow-x:clip}
+html.js:not(.ready){overflow:hidden}
+body{font:400 17px/1.75 Manrope,system-ui,sans-serif;color:var(--ink);background:var(--mist);overflow-x:clip}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;color:var(--pine);letter-spacing:-.015em}
+h1{font-size:clamp(2.6rem,6vw,4.9rem)}
+h2{font-size:clamp(2rem,4.3vw,3.3rem);margin-bottom:.55rem}
+h3{font-size:1.4rem}
+em{font-style:italic;font-weight:400}
+.wrap{max-width:1180px;margin:0 auto;padding-left:22px;padding-right:22px}
+section{padding:100px 0;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font:700 .74rem Manrope,sans-serif;letter-spacing:.26em;text-transform:uppercase;color:var(--clay-d);margin-bottom:18px}
+.eyebrow::before{content:"";width:30px;height:2px;background:currentColor;border-radius:2px}
+.lead{color:var(--mut);max-width:56ch;margin-bottom:42px;font-size:1.04rem}
+.dark{background:var(--pine);color:#cfe0d2}
+.dark h2,.dark h3{color:#fff}
+.dark .eyebrow{color:#f0b48f}
+.dark .lead{color:#a9c4b4}
+.sand{background:var(--sand)}
+:focus-visible{outline:3px solid var(--clay);outline-offset:3px}
+.btn{position:relative;overflow:hidden;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 30px;border-radius:14px;font:700 .93rem Manrope,sans-serif;letter-spacing:.03em;text-decoration:none;color:#fff;background:var(--pine);border:2px solid var(--pine);transform:translate(var(--mx,0px),var(--my,0px));transition:transform .35s var(--ease),box-shadow .4s,color .4s}
+.btn::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(120deg,var(--clay),#e29a6f);transform:scaleX(0);transform-origin:0 50%;transition:transform .55s var(--ease)}
+.btn:hover::before{transform:scaleX(1)}
+.btn:hover{border-color:var(--clay);box-shadow:0 16px 36px rgba(200,115,79,.4)}
+.btn .arr{transition:transform .3s var(--ease)}
+.btn:hover .arr{transform:translateX(6px)}
+.btn.ghost{background:transparent;color:var(--pine)}
+.btn.ghost:hover{color:#fff}
+.dark .btn{background:#fff;color:var(--pine);border-color:#fff}
+.dark .btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.dark .btn:hover{color:#fff;border-color:var(--clay)}
+.rip{position:absolute;border-radius:50%;background:rgba(255,255,255,.45);transform:scale(0);animation:ripple .7s ease-out forwards;pointer-events:none}
+.ic{width:20px;height:20px;fill:currentColor;flex-shrink:0}
+/* loader */
+#loader{position:fixed;inset:0;z-index:100;display:none;place-items:center;background:radial-gradient(620px 460px at 50% 36%,#fff,#e9f1ea 68%,#dce9df);color:var(--pine);overflow:hidden;transition:transform 1.15s cubic-bezier(.77,0,.18,1),border-radius 1.15s cubic-bezier(.77,0,.18,1)}
+.js #loader{display:grid}
+#loader.done{transform:translateY(-104%);border-radius:0 0 50% 50%/0 0 16vh 16vh}
+.ld-bl{position:absolute;border-radius:50%;filter:blur(60px);opacity:.55;animation:bob 8s ease-in-out infinite}
+.ld-c{position:relative;display:grid;justify-items:center;gap:8px;text-align:center;transition:opacity .45s,transform .7s var(--ease)}
+#loader.done .ld-c{opacity:0;transform:translateY(-24px)}
+.ld-skin{width:300px;height:200px;overflow:visible}
+.ld-skin .lyr{opacity:0;transform:translateY(26px);animation:lyr .9s var(--ease) forwards;animation-delay:calc(var(--k)*.28s + .1s)}
+.ld-skin .dr1{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.3s ease-out forwards;animation-delay:calc(var(--k)*.3s + 1s)}
+.ld-skin .dropl{opacity:0;animation:dropfall 1s cubic-bezier(.5,0,.9,.4) 1.8s forwards}
+.ld-skin .rp{fill:none;stroke:#5c9a72;stroke-width:2;opacity:0;transform-box:fill-box;transform-origin:center;animation:rpl 1.5s ease-out forwards;animation-delay:calc(var(--k)*.24s + 2.7s)}
+.ld-name{display:flex;flex-wrap:wrap;justify-content:center;font:600 2rem var(--serif);margin-top:6px;color:var(--pine)}
+.ld-name span{display:inline-block;opacity:0;transform:translateY(-24px) rotate(-8deg);filter:blur(6px);animation:fadeup .8s var(--ease) forwards;animation-delay:calc(var(--k)*55ms + .8s)}
+.ld-sub{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--clay-d);font-weight:700;opacity:0;animation:fadeup .8s var(--ease) 1.8s forwards}
+.ld-line{width:200px;height:3px;background:rgba(18,53,43,.12);margin-top:12px;position:relative;overflow:hidden;border-radius:3px}
+.ld-line i{position:absolute;inset:0;background:linear-gradient(90deg,var(--leaf),var(--clay));transform:scaleX(0);transform-origin:0 50%}
+.ld-pct{font:700 .8rem Manrope,sans-serif;letter-spacing:.2em;font-variant-numeric:tabular-nums;color:var(--mut)}
+/* chrome */
+.vp{position:fixed;right:14px;top:50%;height:150px;margin-top:-75px;width:2px;background:rgba(18,53,43,.14);z-index:30;border-radius:2px}
+.vp i{position:absolute;left:0;top:0;width:100%;height:100%;background:var(--clay);transform:scaleY(0);transform-origin:50% 0;border-radius:2px}
+.vp b{position:absolute;left:-4px;top:0;width:10px;height:10px;border-radius:50%;background:var(--clay);box-shadow:0 0 0 4px rgba(200,115,79,.2)}
+.cur{position:fixed;left:0;top:0;width:360px;height:360px;margin:-180px 0 0 -180px;border-radius:50%;background:radial-gradient(circle,rgba(92,154,114,.3),rgba(200,115,79,.1) 50%,transparent 70%);pointer-events:none;z-index:2;mix-blend-mode:multiply;opacity:0;transition:opacity .5s}
+.cur.on{opacity:1}
+header{position:sticky;top:0;z-index:40;background:rgba(243,246,241,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
+header.sc{border-color:var(--line);box-shadow:0 10px 30px rgba(18,53,43,.08)}
+header .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:86px;padding-top:12px;padding-bottom:12px;transition:min-height .35s var(--ease)}
+header.sc .nav{min-height:68px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+.logo svg{width:40px;height:40px;flex-shrink:0}
+.logo b{display:block;font:600 1.3rem var(--serif);color:var(--pine);line-height:1.1}
+.logo small{display:block;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--clay-d);font-weight:700;margin-top:2px}
+nav{display:flex;gap:26px;font-size:.92rem;font-weight:600}
+nav a{text-decoration:none;color:var(--mut);position:relative;padding:4px 0;transition:color .2s}
+nav a::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:100%;background:var(--clay);transform:scaleX(0);transform-origin:100% 50%;transition:transform .45s var(--ease)}
+nav a:hover{color:var(--pine)}
+nav a:hover::after{transform:scaleX(1);transform-origin:0 50%}
+.callbtn{padding:0 22px;min-height:46px;white-space:nowrap;flex-shrink:0}
+.callbtn .ic{animation:ring 1.3s ease-in-out 1s 3}
+/* hero */
+.hero{padding:44px 0 96px;overflow:hidden;background:radial-gradient(700px 500px at 90% 5%,rgba(200,115,79,.2),transparent 62%),radial-gradient(700px 520px at 0% 100%,rgba(92,154,114,.22),transparent 60%),var(--mist)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;position:relative;z-index:3}
+.pl{position:absolute;border-radius:50%;background:rgba(200,115,79,.55);animation:drift linear infinite;z-index:1}
+.mist{position:absolute;width:520px;height:160px;border-radius:50%;background:rgba(255,255,255,.7);filter:blur(50px);animation:mistx 24s ease-in-out infinite alternate;z-index:1}
+.ch{display:inline-block;opacity:0;transform:translateY(-75%) scale(.6) rotate(-10deg);filter:blur(10px);animation:chIn .9s var(--ease) forwards;animation-delay:calc(var(--i)*34ms + .1s)}
+.wd{display:inline-block;white-space:nowrap}
+.grad{position:relative;display:inline-block}
+.grad .ch{animation:chIn .9s var(--ease) forwards,wave 3.6s ease-in-out infinite;animation-delay:calc(var(--i)*34ms + .1s),calc(var(--i)*150ms + 1.8s)}
+.grad::after{content:"";position:absolute;left:0;bottom:.04em;height:.07em;width:100%;border-radius:4px;background:linear-gradient(90deg,var(--clay),var(--leaf));transform:scaleX(0);transform-origin:0 50%;animation:ul 1.1s var(--ease) 1.8s forwards}
+.fade{opacity:0;transform:translateY(24px);animation:fadeup 1s var(--ease) forwards;animation-delay:var(--d,1s)}
+.rotline{font:400 clamp(1.15rem,2.3vw,1.55rem) var(--serif);font-style:italic;color:var(--pine);margin:24px 0 14px;display:flex;flex-wrap:wrap;gap:.4em;align-items:center}
+.rot{white-space:nowrap;display:inline-block;height:1.35em;overflow:hidden;vertical-align:bottom}
+.rot span{display:block;height:1.35em;line-height:1.35;color:var(--clay-d);font-weight:600}
+.rot-in{display:block;animation:rot 12s var(--ease) infinite}
+.hero p.sub{color:var(--mut);max-width:46ch;margin-bottom:32px;font-size:1.05rem}
+.cta{display:flex;flex-wrap:wrap;gap:14px}
+.chips{margin-top:34px;display:flex;flex-wrap:wrap;gap:12px}
+.chip{display:inline-flex;align-items:center;gap:10px;padding:10px 18px;border-radius:999px;background:rgba(255,255,255,.75);border:1px solid var(--line);font-size:.88rem;font-weight:600;color:var(--pine);backdrop-filter:blur(6px)}
+.chip::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--leaf);box-shadow:0 0 0 0 rgba(92,154,114,.6);animation:ping 2s infinite}
+.vis{position:relative;max-width:450px;margin-left:auto;width:100%}
+.vis::before{content:"";position:absolute;inset:-16px;border:2px dashed rgba(47,107,79,.35);border-radius:999px 999px 40px 40px;animation:pulse 5s ease-in-out infinite}
+.arch{position:relative;border-radius:999px 999px 32px 32px;overflow:hidden;aspect-ratio:400/520;box-shadow:0 40px 90px rgba(18,53,43,.3)}
+.arch svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.lay{transform:translate(var(--lx,0px),var(--ly,0px));transition:transform .5s ease-out}
+.sunwrap{transform-origin:200px 200px;animation:sunrise 3s var(--ease) .4s both,sunbob 7s ease-in-out 3.4s infinite}
+.bird{animation:fly 16s linear infinite}
+.bird.b2{animation-duration:22s;animation-delay:-8s}
+.opt{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.px{position:absolute;transition:transform .45s ease-out;transform:translate(var(--tx,0px),var(--ty,0px));z-index:4}
+.glass{background:rgba(255,255,255,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.7);border-radius:18px;padding:12px 18px;box-shadow:0 18px 44px rgba(18,53,43,.22);font-weight:700;font-size:.88rem;color:var(--pine);animation:bob 6s ease-in-out infinite;display:flex;align-items:center;gap:10px;white-space:nowrap}
+.glass i{width:10px;height:10px;border-radius:50%;background:var(--clay)}
+.glass.g2{animation-delay:-2s}.glass.g2 i{background:var(--leaf)}
+.glass.g3{animation-delay:-4s}.glass.g3 i{background:#e7b94a}
+.p1{top:10%;right:-12%}.p2{top:44%;left:-14%}.p3{top:62%;right:-12%}.p4{top:-4%;left:-9%}.p5{bottom:0;left:-8%}.p6{bottom:-3%;right:-2%}
+.lens{width:118px;height:118px;display:block;animation:scan 7s ease-in-out infinite;filter:drop-shadow(0 16px 26px rgba(18,53,43,.35))}
+.dropper{width:62px;height:104px;display:block;animation:bob 6s ease-in-out -1s infinite;filter:drop-shadow(0 16px 24px rgba(18,53,43,.35))}
+.tw{transform-box:fill-box;transform-origin:center;animation:tw 2.8s ease-in-out infinite;animation-delay:calc(var(--k)*.45s)}
+.badge{width:116px;height:116px;border-radius:50%;background:var(--pine);display:grid;place-items:center;box-shadow:0 16px 40px rgba(18,53,43,.35)}
+.badge svg{width:116px;height:116px;grid-area:1/1;animation:spin 18s linear infinite}
+.badge text{font:700 10.5px Manrope,sans-serif;letter-spacing:.24em;fill:#cfe0d2;text-transform:uppercase}
+.badge .lf{grid-area:1/1;width:34px;height:34px}
+/* marquee */
+.mqw{padding:30px 0;overflow:hidden;white-space:nowrap;background:var(--pine);color:#fff}
+.mq{display:inline-flex;will-change:transform}
+.mq span{font:italic 400 clamp(2.2rem,6vw,4.4rem)/1.2 var(--serif);padding-right:.6em;display:inline-flex;align-items:center;gap:.6em}
+.mq span::after{content:"\2740";color:var(--clay);font-style:normal;font-size:.6em}
+.mq span:nth-child(even){color:#f0b48f}
+/* conditions */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.cd{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:34px 28px 30px;overflow:hidden;transition:transform .25s ease-out,box-shadow .4s,border-color .4s;will-change:transform}
+.cd::before{content:"";position:absolute;left:0;top:0;width:100%;height:100%;background:linear-gradient(160deg,var(--pine),var(--moss));transform:translateY(101%);transition:transform .6s var(--ease);z-index:0}
+.cd:hover::before{transform:none}
+.cd:hover{box-shadow:0 28px 60px rgba(18,53,43,.22)}
+.cd>*{position:relative;z-index:1;transition:color .4s}
+.cd svg{width:54px;height:54px;margin-bottom:18px;fill:none;stroke:var(--clay);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:300;stroke-dashoffset:300;transition:stroke .4s}
+.cd.in svg{animation:draw2 2s ease-out forwards}
+.cd:hover svg{stroke:#f0b48f}
+.js .cd.rv-el{transform:none;translate:0 36px;transition:opacity 1s var(--ease),translate 1s var(--ease),transform .25s ease-out,box-shadow .4s;transition-delay:calc(var(--d,0)*110ms),calc(var(--d,0)*110ms),0s,0s}
+.js .cd.rv-el.in{translate:0 0}
+.cd:hover h3{color:#fff}
+.cd p{color:var(--mut);font-size:.96rem}
+.cd:hover p{color:#cfe0d2}
+.cd .no{position:absolute;right:22px;top:16px;font:italic 400 3rem var(--serif);color:var(--sage);opacity:.8;z-index:1}
+.cd:hover .no{color:rgba(255,255,255,.18)}
+/* skin layers */
+.skg{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.sk{background:#fff;border-radius:var(--r);padding:20px;box-shadow:0 30px 70px rgba(18,53,43,.12);border:1px solid var(--line)}
+.sk svg{width:100%;display:block;overflow:visible}
+.sk .ly{transition:opacity .5s,transform .8s var(--ease);opacity:.35;cursor:pointer}
+.sk[data-a="1"] .l1,.sk[data-a="2"] .l2,.sk[data-a="3"] .l3{opacity:1}
+.js .sk .ly{transform:translateY(40px);opacity:0}
+.js .sk.in .ly{transform:none;opacity:.35;transition-delay:calc(var(--s)*160ms)}
+.js .sk.in[data-a="1"] .l1,.js .sk.in[data-a="2"] .l2,.js .sk.in[data-a="3"] .l3{opacity:1}
+.sk .dr{stroke-dasharray:400;stroke-dashoffset:400}
+.sk.in .dr{animation:draw3 2.4s ease-out .9s forwards}
+.tabs{display:grid;gap:12px;margin-bottom:22px}
+.tb{display:flex;align-items:center;gap:16px;text-align:left;padding:18px 20px;border-radius:18px;border:1px solid var(--line);background:#fff;font:600 1rem Manrope,sans-serif;color:var(--pine);cursor:pointer;transition:all .4s var(--ease)}
+.tb span{flex-shrink:0;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--sage);font:italic 400 1.2rem var(--serif);transition:background .3s,color .3s}
+.tb.on{background:var(--pine);color:#fff;border-color:var(--pine);transform:translateX(10px);box-shadow:0 18px 40px rgba(18,53,43,.25)}
+.tb.on span{background:var(--clay);color:#fff}
+.skt{min-height:104px;color:var(--mut);animation:fadeup .6s var(--ease)}
+/* doctor */
+.doc{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.dp{position:relative;max-width:430px}
+.pa{position:relative;aspect-ratio:4/5;border-radius:200px 200px var(--r) var(--r);overflow:hidden;background:linear-gradient(170deg,#e3efe6,#cfe0d2);box-shadow:0 36px 80px rgba(18,53,43,.22)}
+.pa svg{position:absolute;inset:0;width:100%;height:100%}
+.pa .mono{position:absolute;left:0;right:0;top:34%;text-align:center;font:italic 600 6.2rem var(--serif);color:var(--pine);line-height:1}
+.pa .mono small{display:block;font:700 .72rem Manrope,sans-serif;letter-spacing:.3em;text-transform:uppercase;color:var(--clay-d);margin-top:14px;font-style:normal}
+.fi{position:absolute;width:56px;height:56px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 14px 30px rgba(18,53,43,.2);animation:bob 6s ease-in-out infinite;z-index:2}
+.fi svg{width:28px;height:28px;fill:none;stroke:var(--moss);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.f1{left:12%;top:12%}.f2{right:10%;top:22%;animation-delay:-2s}.f3{left:16%;bottom:16%;animation-delay:-4s}
+.dp .tg{position:absolute;left:-18px;top:36px;background:var(--clay);color:#fff;padding:12px 22px;border-radius:14px;font:italic 400 1.05rem var(--serif);box-shadow:0 14px 34px rgba(168,90,57,.4);animation:bob 6s ease-in-out infinite;z-index:3}
+.dp .ring{position:absolute;right:-30px;bottom:-30px;width:130px;height:130px;border-radius:50%;border:2px dashed var(--clay);animation:spin 28s linear infinite}
+.dp .ring::after{content:"";position:absolute;top:-6px;left:50%;width:11px;height:11px;border-radius:50%;background:var(--clay)}
+.doc p{color:var(--mut);margin-bottom:16px}
+.ticks{list-style:none;padding:0;margin:24px 0 30px;display:grid;gap:12px}
+.ticks li{display:flex;gap:14px;align-items:flex-start;font-weight:600;color:var(--pine)}
+.ticks li::before{content:"";flex-shrink:0;margin-top:.5em;width:18px;height:18px;border-radius:50%;background:var(--leaf) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.500l3.200 3.200L15 6.800' fill='none' stroke='white' stroke-width='2.400' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px no-repeat}
+/* timeline */
+.tl{position:relative;max-width:760px;margin:0 auto;padding-left:70px;--tp:0}
+.tl::before{content:"";position:absolute;left:23px;top:8px;bottom:8px;width:2px;background:rgba(255,255,255,.16)}
+.tl::after{content:"";position:absolute;left:23px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,#f0b48f,var(--leaf));transform:scaleY(var(--tp));transform-origin:50% 0}
+.ts{position:relative;padding-bottom:46px}
+.ts:last-child{padding-bottom:0}
+.ts i{position:absolute;left:-70px;top:-4px;width:48px;height:48px;border-radius:50%;background:var(--pine);border:2px solid rgba(255,255,255,.25);display:grid;place-items:center;font:italic 400 1.4rem var(--serif);color:#fff;transition:background .5s,border-color .5s,transform .6s var(--ease)}
+.ts.on i{background:var(--clay);border-color:var(--clay);transform:scale(1.12)}
+.ts p{color:#a9c4b4}
+/* faq */
+.faq{max-width:800px;margin:0 auto}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:18px;margin-bottom:12px;overflow:hidden;transition:box-shadow .3s,border-color .3s}
+.faq details[open]{box-shadow:0 16px 40px rgba(18,53,43,.1);border-color:var(--leaf)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 24px;font:600 1.1rem var(--serif);color:var(--pine)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex-shrink:0;width:34px;height:34px;border-radius:50%;background:var(--sage);display:grid;place-items:center;font:400 1.4rem Manrope,sans-serif;transition:transform .4s var(--ease),background .3s}
+.faq details[open] summary::after{transform:rotate(135deg);background:var(--clay);color:#fff}
+.faq details p{padding:0 24px 22px;color:var(--mut);animation:fadeup .5s var(--ease)}
+/* cta band + visit */
+.band{background:linear-gradient(135deg,var(--moss),var(--pine));color:#fff;text-align:center;overflow:hidden;padding:90px 0}
+.band h2{color:#fff;max-width:18ch;margin:0 auto 14px}
+.band p{color:#cfe0d2;margin-bottom:30px}
+.band .cta{justify-content:center}
+.band::before,.band::after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.14);animation:spin 40s linear infinite}
+.band::before{width:520px;height:520px;left:-160px;top:-200px}
+.band::after{width:380px;height:380px;right:-100px;bottom:-160px;animation-direction:reverse}
+.band .wrap{position:relative;z-index:2}
+.visit{display:grid;grid-template-columns:1fr 1.15fr;gap:52px}
+.info div{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.info div:last-child{border:0}
+.info b{min-width:96px;color:var(--pine);font-weight:700}
+.info span,.info a{color:var(--mut)}
+.loc{position:relative;margin-top:22px;border-radius:var(--r);overflow:hidden;aspect-ratio:16/9;background:linear-gradient(180deg,#cfe6d8,#f6e7d0);box-shadow:0 20px 50px rgba(18,53,43,.15)}
+.loc svg{position:absolute;inset:0;width:100%;height:100%}
+.loc small{position:absolute;left:18px;bottom:14px;z-index:2;background:rgba(255,255,255,.85);padding:6px 14px;border-radius:999px;font-weight:700;font-size:.78rem;color:var(--pine)}
+.map{border-radius:var(--r);overflow:hidden;min-height:440px;border:1px solid var(--line);box-shadow:0 20px 50px rgba(18,53,43,.12)}
+.map iframe{width:100%;height:100%;min-height:440px;border:0}
+footer{background:var(--pine2);color:#a9c4b4;padding:68px 0 28px;font-size:.95rem}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1.3fr;gap:40px}
+footer h4{font:600 1.35rem var(--serif);color:#fff;margin-bottom:14px}
+footer a{display:block;text-decoration:none;padding:3px 0;transition:color .2s,transform .3s var(--ease)}
+footer a:hover{color:#f0b48f;transform:translateX(4px)}
+.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:20px;font-size:.84rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+.fab{position:fixed;left:14px;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));max-width:520px;margin:0 auto;z-index:45;display:none;gap:10px}
+.fab .btn{flex:1;white-space:nowrap;padding:14px 10px;box-shadow:0 12px 30px rgba(18,53,43,.4)}
+.fab .btn.ghost{background:var(--mist)}
+/* reveal */
+.js .rv-el{opacity:0;transform:translateY(36px);transition:opacity 1s var(--ease),transform 1s var(--ease);transition-delay:calc(var(--d,0)*110ms)}
+.js .rv-el.in{opacity:1;transform:none}
+.js .rv-l{transform:translateX(-46px)}
+.js .rv-r{transform:translateX(46px)}
+.wm{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.14em;margin-bottom:-.14em}
+.wv{display:inline-block}
+.js .sw .wv{transform:translateY(118%) rotate(4deg)}
+.js .sw.in .wv{transform:none;transition:transform 1.1s var(--ease);transition-delay:calc(var(--w)*60ms)}
+.js:not(.ready) .hero *,.js:not(.ready) .hero *::after,.js:not(.ready) .hero *::before{animation-play-state:paused!important}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes draw2{to{stroke-dashoffset:0}}
+@keyframes draw3{to{stroke-dashoffset:0}}
+@keyframes lyr{to{opacity:1;transform:none}}
+@keyframes dropfall{0%{opacity:1;transform:translateY(0)}85%{opacity:1;transform:translateY(64px)}100%{opacity:0;transform:translateY(70px)}}
+@keyframes rpl{0%{opacity:.9;transform:scale(.2)}100%{opacity:0;transform:scale(3.4,1.3)}}
+@keyframes tw{0%,100%{opacity:.25;transform:scale(.6)}50%{opacity:1;transform:scale(1.2)}}
+@keyframes scan{0%,100%{transform:rotate(-8deg) translateX(0)}50%{transform:rotate(8deg) translateX(8px)}}
+@keyframes shine{0%,100%{opacity:.2}50%{opacity:.7}}
+@keyframes sunbob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes sunrise{from{transform:translateY(90px);opacity:0}to{transform:none;opacity:1}}
+@keyframes chIn{to{opacity:1;transform:none;filter:none}}
+@keyframes wave{0%,100%{color:var(--moss)}50%{color:var(--clay)}}
+@keyframes ul{to{transform:scaleX(1)}}
+@keyframes fadeup{to{opacity:1;transform:none;filter:none}}
+@keyframes rot{0%,16%{transform:translateY(0)}20%,36%{transform:translateY(-1.35em)}40%,56%{transform:translateY(-2.7em)}60%,76%{transform:translateY(-4.05em)}80%,96%{transform:translateY(-5.4em)}100%{transform:translateY(-6.75em)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes pulse{0%,100%{opacity:.35;transform:scale(1)}50%{opacity:.9;transform:scale(1.025)}}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(92,154,114,.6)}70%,100%{box-shadow:0 0 0 12px rgba(92,154,114,0)}}
+@keyframes drift{0%{transform:translate3d(0,0,0);opacity:0}15%{opacity:.8}85%{opacity:.6}100%{transform:translate3d(80px,-110vh,0);opacity:0}}
+@keyframes mistx{from{transform:translateX(-12%)}to{transform:translateX(30%)}}
+@keyframes fly{from{transform:translateX(-60px)}to{transform:translateX(470px)}}
+@keyframes ripple{to{transform:scale(4);opacity:0}}
+@keyframes ring{0%,100%{transform:rotate(0)}15%{transform:rotate(-16deg)}30%{transform:rotate(14deg)}45%{transform:rotate(-10deg)}60%{transform:rotate(8deg)}75%{transform:rotate(0)}}
+/* responsive */
+@media(max-width:1060px){nav{display:none}.vp{display:none}}
+@media(max-width:900px){
+section{padding:68px 0}
+.hero .wrap,.skg,.doc,.visit,.fg{grid-template-columns:1fr}
+.hero .wrap{gap:60px}
+.vis{margin:0 auto;max-width:390px}
+.grid3{grid-template-columns:1fr 1fr}
+.dp{margin:0 auto 26px}
+.map,.map iframe{min-height:320px}
+.fab{display:flex}
+body{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+}
+@media(max-width:560px){
+body{font-size:16px}
+.wrap{padding-left:16px;padding-right:16px}
+section{padding:54px 0}
+.hero{padding:24px 0 56px}
+h1{font-size:clamp(2.3rem,11vw,3.1rem)}
+header .nav{min-height:80px;padding-top:14px;padding-bottom:14px}
+header.sc .nav{min-height:68px}
+.logo b{font-size:1.12rem}
+.logo svg{width:36px;height:36px}
+.logo small{font-size:.54rem;letter-spacing:.14em}
+.callbtn{width:48px;height:48px;min-height:48px;padding:0;border-radius:50%}
+.callbtn .num{display:none}
+.cta .btn{flex:1 1 100%}
+.grid3{grid-template-columns:1fr}
+.badge,.badge svg{width:86px;height:86px}
+.p1{right:-4%}.p2{left:-5%}.p3{right:-4%}.p4{left:-4%}.p5{left:-3%}.p6{right:0}
+.lens{width:84px;height:84px}
+.dropper{width:44px;height:74px}
+.glass{padding:9px 14px;font-size:.8rem}
+.info div{flex-direction:column;gap:2px}
+.info b{min-width:0}
+.tl{padding-left:60px}
+.ts i{left:-60px;width:42px;height:42px}
+.tl::before,.tl::after{left:20px}
+.pa .mono{font-size:4.8rem}
+.tb.on{transform:translateX(4px)}
+.faq summary{padding:16px 18px;font-size:1rem}
+.faq details p{padding:0 18px 18px}
+.copy{flex-direction:column}
+.ld-name{font-size:1.6rem}
+.ld-skin{width:250px;height:167px}
+}
+@media(max-width:360px){
+.wrap{padding-left:14px;padding-right:14px}
+.logo small{display:none}
+.fab{left:10px;right:10px}
+}
+@media(prefers-reduced-motion:reduce){
+#loader{display:none!important}
+*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+.ch,.fade{opacity:1!important;transform:none!important;filter:none!important}
+.grad::after{transform:scaleX(1)!important}
+.js .rv-el,.js .sw .wv{opacity:1!important;transform:none!important}
+.js .sk .ly{opacity:.35!important;transform:none!important}
+.js .sk[data-a="1"] .l1,.js .sk[data-a="2"] .l2,.js .sk[data-a="3"] .l3{opacity:1!important}
+.sk .dr,.cd svg{stroke-dashoffset:0!important}
+.pl,.cur,.mist{display:none}
+}
+</style>
+<script>(function(d){d.classList.add('js');setTimeout(function(){d.classList.add('ready');var l=document.getElementById('loader');if(l)l.remove()},9000)})(document.documentElement)</script>
+</head>
+<body>
+<div class="vp" aria-hidden="true"><i id="vpi"></i><b id="vpb"></b></div>
+<div class="cur" id="cur"></div>
+
+<div id="loader" aria-hidden="true">
+<span class="ld-bl" style="width:320px;height:320px;left:-80px;top:-60px;background:#bfe0c9"></span>
+<span class="ld-bl" style="width:360px;height:360px;right:-100px;bottom:-80px;background:#f4cdb4;animation-delay:-3s"></span>
+<div class="ld-c">
+<svg class="ld-skin" viewBox="0 0 300 200" aria-hidden="true">
+<g class="lyr" style="--k:0"><path d="M0 152H300V198H0Z" fill="#f6e3b4"/><circle cx="46" cy="176" r="14" fill="#f9edc9" stroke="#e8cf8e"/><circle cx="108" cy="182" r="11" fill="#f9edc9" stroke="#e8cf8e"/><circle cx="196" cy="178" r="13" fill="#f9edc9" stroke="#e8cf8e"/><circle cx="256" cy="180" r="15" fill="#f9edc9" stroke="#e8cf8e"/></g>
+<g class="lyr" style="--k:1"><path d="M0 112H300V154H0Z" fill="#e8b393"/><path class="dr1" pathLength="1" style="--k:1.2" d="M16 138q32-24 64 0t64 0t64 0t64 0" fill="none" stroke="#c4455a" stroke-width="3.500" stroke-linecap="round"/><ellipse cx="238" cy="128" rx="11" ry="7" fill="#f3d27a"/></g>
+<g class="lyr" style="--k:2"><path d="M0 100Q25 92 50 100T100 100T150 100T200 100T250 100T300 100V114H0Z" fill="#f2cfb0"/></g>
+<path class="dr1" pathLength="1" style="--k:2.4" d="M214 102C214 82 219 66 228 50" fill="none" stroke="#5a3a2a" stroke-width="3" stroke-linecap="round"/>
+<path class="dr1" pathLength="1" style="--k:2.8" d="M80 102C80 86 76 72 68 60" fill="none" stroke="#5a3a2a" stroke-width="3" stroke-linecap="round"/>
+<ellipse class="rp" style="--k:0" cx="150" cy="100" rx="22" ry="5"/><ellipse class="rp" style="--k:1" cx="150" cy="100" rx="22" ry="5"/><ellipse class="rp" style="--k:2" cx="150" cy="100" rx="22" ry="5"/>
+<path class="dropl" d="M150 4c0 0-9 14-9 20a9 9 0 0 0 18 0c0-6-9-20-9-20z" fill="#5c9a72"/>
+</svg>
+<div class="ld-name"><span style="--k:0">D</span><span style="--k:1">r</span><span style="--k:2">.</span><span style="--k:3">&nbsp;</span><span style="--k:4">T</span><span style="--k:5">a</span><span style="--k:6">n</span><span style="--k:7">a</span><span style="--k:8">&nbsp;</span><span style="--k:9">A</span><span style="--k:10">n</span><span style="--k:11">a</span><span style="--k:12">n</span><span style="--k:13">t</span><span style="--k:14">o</span></div>
+<div class="ld-sub">Dermatologist · Skin, Hair &amp; Nails</div>
+<div class="ld-line"><i id="ldbar"></i></div>
+<div class="ld-pct" id="ldpct">0%</div>
+</div>
+</div>
+
+<header id="hd">
+<div class="wrap nav">
+<a class="logo" href="#top" aria-label="Dr. Tana Ananto, Dermatologist">
+<svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#12352b"/><path d="M24 8C24 8 12.500 21 12.500 28.500a11.500 11.500 0 0 0 23 0C35.500 21 24 8 24 8z" fill="#5c9a72"/><path d="M14.500 30q4.500-4 9.500 0t9.500 0" fill="none" stroke="#f1e7d8" stroke-width="2" stroke-linecap="round"/><path d="M14.500 35q4.500-4 9.500 0t9.500 0" fill="none" stroke="#f1e7d8" stroke-width="1.500" stroke-linecap="round" opacity=".6"/><path d="M19 22c1-3 3-5 5-6" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".7"/></svg>
+<span><b>Dr. Tana Ananto</b><small>Dermatologist · Itanagar</small></span>
+</a>
+<nav aria-label="Main"><a href="#conditions">Conditions</a><a href="#skin">Skin</a><a href="#doctor">Doctor</a><a href="#journey">Care</a><a href="#faq">Tips</a><a href="#visit">Visit</a></nav>
+<a class="btn callbtn mag" href="tel:+918837210190" aria-label="Call Dr. Tana Ananto on 8837210190"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg><span class="num">8837210190</span></a>
+</div>
+</header>
+
+<main id="top">
+
+<section class="hero" id="hero">
+<span class="mist" style="left:-8%;top:8%"></span>
+<span class="mist" style="right:-10%;bottom:6%;animation-delay:-8s"></span>
+<div class="wrap">
+<div>
+<span class="eyebrow fade" style="--d:.2s" data-scr>Itanagar · Arunachal Pradesh</span>
+<h1 class="split">Healthy skin, <em class="grad">rooted</em> in expert care.</h1>
+<div class="rotline fade" style="--d:1.4s">Care for <span class="rot"><span class="rot-in"><span>acne and scars</span><span>pigmentation</span><span>hair fall</span><span>eczema and allergies</span><span>skin infections</span><span>acne and scars</span></span></span></div>
+<p class="sub fade" style="--d:1.6s">Dr. Tana Ananto is a dermatologist at Ramakrishna Mission Hospital, Ganga Market, Itanagar, caring for your skin, hair and nails with clear advice and gentle treatment.</p>
+<div class="cta fade" style="--d:1.8s">
+<a class="btn mag" href="https://wa.me/918837210190?text=Hello%20Dr.%20Tana%20Ananto%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book appointment <span class="arr">&rarr;</span></a>
+<a class="btn ghost mag" href="tel:+918837210190">Call 8837210190</a>
+</div>
+<div class="chips fade" style="--d:2s"><div class="chip">Morning OPD 8 am – 1 pm</div><div class="chip">Ganga Market, Itanagar</div></div>
+</div>
+<div class="vis fade" style="--d:.6s" id="vis">
+<div class="arch">
+<svg viewBox="0 0 400 520" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<defs>
+<linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d7eadc"/><stop offset="1" stop-color="#f8e9d6"/></linearGradient>
+<linearGradient id="skn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f9dac3"/><stop offset="1" stop-color="#ecb897"/></linearGradient>
+<radialGradient id="blsh" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#f08f8a" stop-opacity=".6"/><stop offset="1" stop-color="#f08f8a" stop-opacity="0"/></radialGradient>
+<radialGradient id="halo" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+<path id="spk" d="M0-11Q1.600-1.600 11 0Q1.600 1.600 0 11Q-1.600 1.600-11 0Q-1.600-1.600 0-11Z"/>
+</defs>
+<rect width="400" height="520" fill="url(#bg1)"/>
+<g class="lay" data-d="8">
+<circle cx="200" cy="230" r="170" fill="url(#halo)"/>
+<path d="M-30 330C20 250 90 230 150 262C100 270 50 300 10 380Z" fill="#5c9a72" opacity=".6"/>
+<path d="M-10 430C40 360 110 340 170 370C120 380 70 410 40 480Z" fill="#2f6b4f" opacity=".55"/>
+<path d="M430 300C380 230 320 220 262 250C310 258 352 286 384 360Z" fill="#5c9a72" opacity=".6"/>
+<path d="M440 410C390 350 330 332 276 356C320 366 360 394 380 460Z" fill="#2f6b4f" opacity=".55"/>
+</g>
+<g class="lay" data-d="14">
+<path d="M110 232C92 112 160 54 206 54C268 56 318 116 298 244L306 430L104 430Z" fill="#2e211c"/>
+<path d="M172 316L172 420L200 456L228 420L228 316Z" fill="#e8b08c"/>
+<path d="M40 530Q50 430 160 408L200 452L240 408Q350 430 360 530Z" fill="#fbfaf6"/>
+<path d="M160 408L200 452L240 408" fill="none" stroke="#dfe8e0" stroke-width="3"/>
+<circle cx="119" cy="216" r="12" fill="#f0c2a2"/><circle cx="281" cy="216" r="12" fill="#f0c2a2"/>
+<path d="M200 88C256 88 286 140 283 206C281 272 246 336 200 336C154 336 119 272 117 206C114 140 144 88 200 88Z" fill="url(#skn)"/>
+<path d="M112 220C100 118 150 70 204 72C262 74 300 124 288 220C282 176 258 140 222 126C196 150 150 158 112 220Z" fill="#3b2a24"/>
+<path d="M140 120C170 92 220 84 250 108" fill="none" stroke="#5a4036" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+<circle cx="148" cy="262" r="32" fill="url(#blsh)"/><circle cx="252" cy="262" r="32" fill="url(#blsh)"/>
+<path d="M146 192Q162 183 180 191M220 191Q238 183 254 192" fill="none" stroke="#3b2a24" stroke-width="3.200" stroke-linecap="round"/>
+<path d="M148 211Q164 223 180 211M220 211Q236 223 252 211" fill="none" stroke="#3b2a24" stroke-width="2.600" stroke-linecap="round"/>
+<path d="M200 222Q195 252 188 262Q200 270 212 262" fill="none" stroke="#d9a083" stroke-width="2.400" stroke-linecap="round"/>
+<path d="M176 297Q188 287 200 293Q212 287 224 297Q200 319 176 297Z" fill="#d4808b"/>
+<ellipse cx="172" cy="152" rx="15" ry="6" fill="#fff" opacity=".4" transform="rotate(-20 172 152)"/>
+<ellipse cx="200" cy="240" rx="4" ry="14" fill="#fff" opacity=".3"/>
+<ellipse cx="258" cy="248" rx="11" ry="5" fill="#fff" opacity=".4" transform="rotate(-30 258 248)"/>
+<ellipse cx="142" cy="250" rx="11" ry="5" fill="#fff" opacity=".4" transform="rotate(30 142 250)"/>
+</g>
+<g class="lay" data-d="30">
+<use class="tw" style="--k:0" href="#spk" x="86" y="168" fill="#fff"/><use class="tw" style="--k:1" href="#spk" x="322" y="186" fill="#fff"/><use class="tw" style="--k:2" href="#spk" x="304" y="108" fill="#fff"/><use class="tw" style="--k:3" href="#spk" x="104" y="332" fill="#fff"/><use class="tw" style="--k:4" href="#spk" x="338" y="318" fill="#fff"/><use class="tw" style="--k:5" href="#spk" x="232" y="64" fill="#fff"/>
+</g>
+</svg>
+<img class="opt" src="hero.jpg" alt="Dr. Tana Ananto" onerror="this.remove()">
+</div>
+<div class="px p1" data-depth="26"><div class="glass"><i></i>Acne</div></div>
+<div class="px p2" data-depth="-22"><div class="glass g2"><i></i>Pigmentation</div></div>
+<div class="px p3" data-depth="30"><div class="glass g3"><i></i>Hair fall</div></div>
+<div class="px p4" data-depth="-30"><div class="badge"><svg viewBox="0 0 116 116" aria-hidden="true"><defs><path id="cp" d="M58 58m-43 0a43 43 0 1 1 86 0a43 43 0 1 1-86 0"/></defs><text><textPath href="#cp">Skin · Hair · Nails · Care · </textPath></text></svg><svg class="lf" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6C24 6 12.500 19 12.500 26.500a11.500 11.500 0 0 0 23 0C35.500 19 24 6 24 6z" fill="#5c9a72"/><path d="M15 29q4.500-4 9 0t9 0" fill="none" stroke="#f1e7d8" stroke-width="2" stroke-linecap="round"/></svg></div></div>
+<div class="px p5" data-depth="24"><svg class="lens" viewBox="0 0 150 150" aria-hidden="true"><defs><clipPath id="lc"><circle cx="64" cy="64" r="52"/></clipPath><radialGradient id="lg2"><stop offset="0" stop-color="#fbe3d0"/><stop offset="1" stop-color="#eebb9a"/></radialGradient><pattern id="pt" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="8" cy="8" r="1.700" fill="#d89c7a"/></pattern></defs><g clip-path="url(#lc)"><circle cx="64" cy="64" r="52" fill="url(#lg2)"/><rect width="150" height="150" fill="url(#pt)"/><path d="M8 84q20-30 48-8t58-14" fill="none" stroke="#e6a98a" stroke-width="3"/><circle cx="46" cy="46" r="9" fill="#fff" opacity=".4"/></g><circle cx="64" cy="64" r="52" fill="none" stroke="#12352b" stroke-width="7"/><path d="M102 102L140 140" stroke="#12352b" stroke-width="12" stroke-linecap="round"/></svg></div>
+<div class="px p6" data-depth="-26"><svg class="dropper" viewBox="0 0 90 150" aria-hidden="true"><defs><linearGradient id="gb" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1d4b39"/><stop offset=".45" stop-color="#6fb088"/><stop offset="1" stop-color="#1d4b39"/></linearGradient></defs><rect x="30" y="2" width="30" height="42" rx="14" fill="#f1e7d8"/><rect x="26" y="40" width="38" height="14" rx="3" fill="#c8734f"/><rect x="14" y="54" width="62" height="92" rx="14" fill="url(#gb)"/><rect x="26" y="80" width="38" height="42" rx="4" fill="#f8f2e6"/><path d="M32 94h26M32 103h18M32 112h22" stroke="#12352b" stroke-width="2" stroke-linecap="round"/><rect x="20" y="62" width="6" height="70" rx="3" fill="#fff" opacity=".3"/></svg></div>
+</div>
+</div>
+</section>
+
+<div class="mqw" aria-hidden="true"><div class="mq" id="mq"><span>Acne</span><span>Pigmentation</span><span>Hair fall</span><span>Eczema</span><span>Fungal infections</span><span>Anti-ageing</span><span>Acne</span><span>Pigmentation</span><span>Hair fall</span><span>Eczema</span><span>Fungal infections</span><span>Anti-ageing</span></div></div>
+
+<section id="conditions">
+<div class="wrap">
+<span class="eyebrow rv-el">Conditions we treat</span>
+<h2 class="sw">Expert care for skin, hair and <em>nails</em></h2>
+<p class="lead rv-el" style="--d:1">Whether it is a stubborn breakout or a long-standing skin problem, you get a proper diagnosis and a treatment plan that makes sense.</p>
+<div class="grid3">
+<article class="cd rv-el" style="--d:1"><span class="no">01</span><svg viewBox="0 0 48 48"><path d="M24 6C24 6 10 22 10 31a14 14 0 0 0 28 0C38 22 24 6 24 6z"/><path d="M18 32a6 6 0 0 0 6 6"/></svg><h3>Acne and scars</h3><p>Treatment for pimples, cysts and post-acne marks, with a skin routine you can follow.</p></article>
+<article class="cd rv-el" style="--d:2"><span class="no">02</span><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="8"/><path d="M24 5v6M24 37v6M5 24h6M37 24h6M10.500 10.500l4.200 4.200M33.300 33.300l4.200 4.200M10.500 37.500l4.200-4.200M33.300 14.700l4.200-4.200"/></svg><h3>Pigmentation</h3><p>Evaluation and care for melasma, dark spots and uneven skin tone.</p></article>
+<article class="cd rv-el" style="--d:3"><span class="no">03</span><svg viewBox="0 0 48 48"><path d="M14 8c-6 10 6 14 0 24s6 10 0 10M24 6c-6 10 6 14 0 24s6 12 0 12M34 8c-6 10 6 14 0 24s6 10 0 10"/></svg><h3>Hair fall and scalp</h3><p>Finding the cause of hair shedding, dandruff and scalp problems, and treating it.</p></article>
+<article class="cd rv-el" style="--d:1"><span class="no">04</span><svg viewBox="0 0 48 48"><path d="M10 38C10 20 20 10 40 8c-1 20-10 30-28 31"/><path d="M12 36c8-10 14-16 22-22"/></svg><h3>Eczema and allergies</h3><p>Relief for itching, rashes, dry and sensitive skin, and allergic reactions.</p></article>
+<article class="cd rv-el" style="--d:2"><span class="no">05</span><svg viewBox="0 0 48 48"><circle cx="18" cy="20" r="8"/><circle cx="32" cy="14" r="5"/><circle cx="31" cy="32" r="9"/><circle cx="14" cy="36" r="4"/></svg><h3>Skin infections</h3><p>Diagnosis and treatment of fungal, bacterial and viral infections of the skin.</p></article>
+<article class="cd rv-el" style="--d:3"><span class="no">06</span><svg viewBox="0 0 48 48"><path d="M24 4l4.500 13.500L42 22l-13.500 4.500L24 40l-4.500-13.500L6 22l13.500-4.500z"/></svg><h3>Anti-ageing skin care</h3><p>Healthy, glowing skin through sun protection, routines and suitable treatments.</p></article>
+</div>
+</div>
+</section>
+
+<section id="skin" class="sand">
+<div class="wrap skg">
+<div class="sk rv-el rv-l" id="sk" data-a="2">
+<svg viewBox="0 0 420 340" role="img" aria-label="Cross-section of the skin showing epidermis, dermis and hypodermis">
+<g class="ly l3" style="--s:2" data-l="3"><path d="M0 232H420V334H0Z" fill="#f6e3b4"/><circle cx="52" cy="276" r="22" fill="#f9edc9" stroke="#e8cf8e"/><circle cx="116" cy="290" r="18" fill="#f9edc9" stroke="#e8cf8e"/><circle cx="352" cy="280" r="24" fill="#f9edc9" stroke="#e8cf8e"/><circle cx="290" cy="298" r="16" fill="#f9edc9" stroke="#e8cf8e"/><circle cx="190" cy="304" r="14" fill="#f9edc9" stroke="#e8cf8e"/></g>
+<g class="ly l2" style="--s:1" data-l="2"><path d="M0 100H420V234H0Z" fill="#e8b393"/><path d="M20 150q20-14 40 0t40 0t40 0" fill="none" stroke="#d4936f" stroke-width="3"/><path d="M250 130q20-14 40 0t40 0t40 0" fill="none" stroke="#d4936f" stroke-width="3"/><ellipse cx="244" cy="154" rx="18" ry="12" fill="#f3d27a"/><path class="dr" d="M30 214q40-34 80 0t80 0t80 0t80 0" fill="none" stroke="#c4455a" stroke-width="5" stroke-linecap="round"/><path d="M330 214q-14-10 0-20t0-20t0-20" fill="none" stroke="#8a5a44" stroke-width="3"/><path d="M330 154V60" fill="none" stroke="#8a5a44" stroke-width="2.500" stroke-dasharray="4 4"/></g>
+<g class="ly l1" style="--s:0" data-l="1"><path d="M0 62Q35 50 70 62T140 62T210 62T280 62T350 62T420 62V102H0Z" fill="#f2cfb0"/><path d="M0 62Q35 50 70 62T140 62T210 62T280 62T350 62T420 62" fill="none" stroke="#e0b08a" stroke-width="4"/></g>
+<g><path class="dr" d="M206 6V62C206 120 200 190 207 244" fill="none" stroke="#5a3a2a" stroke-width="6" stroke-linecap="round"/><circle cx="208" cy="254" r="16" fill="#c99070" stroke="#5a3a2a" stroke-width="3"/></g>
+</svg>
+</div>
+<div>
+<span class="eyebrow rv-el">Know your skin</span>
+<h2 class="sw">Three layers, one <em>healthy</em> you</h2>
+<div class="tabs rv-el" style="--d:1">
+<button class="tb" data-a="1"><span>1</span>Epidermis · the outer shield</button>
+<button class="tb on" data-a="2"><span>2</span>Dermis · the living support</button>
+<button class="tb" data-a="3"><span>3</span>Hypodermis · the cushion</button>
+</div>
+<p class="skt" id="skt">The dermis holds collagen, blood vessels, oil glands and hair roots. Acne, hair fall and the signs of ageing involve this layer, which is why treatment starts with understanding it.</p>
+</div>
+</div>
+</section>
+
+<section id="doctor">
+<div class="wrap doc">
+<div class="dp rv-el rv-l"><div class="pa">
+<svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><radialGradient id="dh" cx=".5" cy=".4" r=".6"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#cfe0d2" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="230" r="190" fill="url(#dh)"/><path d="M-20 400Q60 340 140 380T300 366T420 380V520H-20Z" fill="#9fc4ad"/><path d="M-20 450Q100 410 200 440T420 430V520H-20Z" fill="#5c9a72"/><path d="M40 210c0-48 34-76 100-82-2 56-34 92-76 90" fill="#5c9a72" opacity=".4"/><path d="M360 170c0-44-30-66-80-70 2 50 28 80 64 76" fill="#2f6b4f" opacity=".35"/></svg>
+<div class="mono">TA<small>Dermatologist</small></div>
+<span class="fi f1"><svg viewBox="0 0 28 28"><path d="M6 3v7a5 5 0 0 0 10 0V3M11 15v3a5 5 0 0 0 10 0v-1"/><circle cx="21" cy="14" r="2.500"/></svg></span>
+<span class="fi f2"><svg viewBox="0 0 28 28"><path d="M14 3S6 12 6 17a8 8 0 0 0 16 0C22 12 14 3 14 3z"/></svg></span>
+<span class="fi f3"><svg viewBox="0 0 28 28"><circle cx="12" cy="12" r="7"/><path d="M17 17l7 7"/></svg></span>
+<img class="opt" src="doctor.jpg" alt="Dr. Tana Ananto" onerror="this.remove()">
+</div><div class="tg">Dermatology</div><span class="ring"></span></div>
+<div>
+<span class="eyebrow rv-el">Meet your doctor</span>
+<h2 class="sw">Dr. Tana Ananto</h2>
+<p class="rv-el" style="--d:1">Dr. Tana Ananto sees patients at Ramakrishna Mission Hospital in Ganga Market, Itanagar. Every consultation starts with listening, so the diagnosis and the plan fit you and not just your symptoms.</p>
+<ul class="ticks rv-el" style="--d:2"><li>Careful examination and a clear diagnosis</li><li>Simple, realistic treatment and skin-care plans</li><li>Care for skin, hair and nails</li><li>Convenient location in the heart of Ganga Market</li></ul>
+<a class="btn mag rv-el" style="--d:3" href="tel:+918837210190">Call for an appointment <span class="arr">&rarr;</span></a>
+</div>
+</div>
+</section>
+
+<section id="journey" class="dark">
+<div class="wrap">
+<div style="text-align:center">
+<span class="eyebrow rv-el">Your care</span>
+<h2 class="sw">From first visit to <em>lasting</em> results</h2>
+<p class="lead rv-el" style="--d:1;margin-left:auto;margin-right:auto">A clear path, so you always know what comes next.</p>
+</div>
+<div class="tl" id="tl">
+<div class="ts rv-el"><i>1</i><h3>Consultation</h3><p>Tell the doctor about your concern, your history and your goals. Your skin, hair or nails are examined carefully.</p></div>
+<div class="ts rv-el"><i>2</i><h3>Diagnosis</h3><p>The cause is identified, and tests are advised only when they are really needed.</p></div>
+<div class="ts rv-el"><i>3</i><h3>Treatment plan</h3><p>You get a clear plan with medicines, procedures if required, and a daily skin-care routine.</p></div>
+<div class="ts rv-el"><i>4</i><h3>Follow-up</h3><p>Progress is reviewed and the plan adjusted, so results last.</p></div>
+</div>
+</div>
+</section>
+
+<section id="faq" class="sand">
+<div class="wrap">
+<div style="text-align:center">
+<span class="eyebrow rv-el">Skin tips</span>
+<h2 class="sw">Simple habits for <em>healthier</em> skin</h2>
+<p class="lead rv-el" style="--d:1;margin-left:auto;margin-right:auto">Good basics go a long way. For persistent problems, please see a dermatologist.</p>
+</div>
+<div class="faq rv-el">
+<details open><summary>Do I really need sunscreen every day?</summary><p>Yes. Daily sunscreen of SPF 30 or higher helps prevent tanning, dark spots and early ageing, even on cloudy days and at higher altitudes where UV is stronger.</p></details>
+<details><summary>How should I wash my face?</summary><p>Use a gentle cleanser twice a day with lukewarm water. Avoid harsh scrubbing, and follow with a moisturiser suited to your skin type.</p></details>
+<details><summary>Should I squeeze or pick pimples?</summary><p>No. It can spread infection and leave lasting marks and scars. If acne keeps coming back, it is best to have it treated.</p></details>
+<details><summary>When should I see a dermatologist?</summary><p>See a doctor if a rash, breakout, patch or hair problem lasts more than a few weeks, keeps returning, spreads, or if a mole changes in size or colour.</p></details>
+<details><summary>How do I book an appointment?</summary><p>Call 8837210190 or message on WhatsApp. Morning OPD is from 8 am to 1 pm at Ramakrishna Mission Hospital, Ganga Market.</p></details>
+</div>
+</div>
+</section>
+
+<section class="band">
+<div class="wrap">
+<h2 class="sw">Ready for clearer, healthier skin?</h2>
+<p class="rv-el">Book a consultation with Dr. Tana Ananto today.</p>
+<div class="cta rv-el" style="--d:1"><a class="btn mag" style="background:#fff;color:var(--pine);border-color:#fff" href="https://wa.me/918837210190?text=Hello%20Dr.%20Tana%20Ananto%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book on WhatsApp <span class="arr">&rarr;</span></a><a class="btn ghost mag" style="color:#fff;border-color:rgba(255,255,255,.6)" href="tel:+918837210190">Call 8837210190</a></div>
+</div>
+</section>
+
+<section id="visit">
+<div class="wrap visit">
+<div>
+<span class="eyebrow rv-el">Visit</span>
+<h2 class="sw">Find the clinic</h2>
+<div class="info rv-el" style="--d:1">
+<div><b>Address</b><span>Ramakrishna Mission Hospital, Ganga Market, NH415, Itanagar, Arunachal Pradesh 791113</span></div>
+<div><b>Phone</b><a href="tel:+918837210190">8837210190</a></div>
+<div><b>Hours</b><span>Morning OPD, 8 am to 1 pm. Please call to confirm timings.</span></div>
+<div><b>Directions</b><a href="https://www.google.com/maps/search/?api=1&amp;query=Dr.+Tana+Ananto+Best+Dermatologist+in+Itanagar" target="_blank" rel="noopener">Open in Google Maps</a></div>
+</div>
+<div class="loc rv-el" style="--d:2">
+<svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><circle cx="262" cy="46" r="22" fill="#f0b48f" opacity=".85"/><path d="M-10 124L40 88l36 24 44-40 50 46 44-34 60 44V190H-10Z" fill="#b8d6c2"/><rect x="92" y="52" width="136" height="116" rx="6" fill="#fff"/><rect x="92" y="52" width="136" height="20" rx="6" fill="#12352b"/><circle cx="160" cy="100" r="19" fill="#c8734f"/><path d="M160 89v22M149 100h22" stroke="#fff" stroke-width="5" stroke-linecap="round"/><g fill="#cfe0d2"><rect x="106" y="124" width="22" height="18" rx="2"/><rect x="132" y="124" width="22" height="18" rx="2"/><rect x="166" y="124" width="22" height="18" rx="2"/><rect x="192" y="124" width="22" height="18" rx="2"/></g><rect x="148" y="146" width="24" height="22" rx="3" fill="#5c9a72"/><circle cx="72" cy="150" r="20" fill="#5c9a72"/><circle cx="252" cy="152" r="18" fill="#2f6b4f"/><rect x="-10" y="168" width="340" height="14" fill="#12352b"/></svg>
+<img class="opt" src="clinic.jpg" alt="Ramakrishna Mission Hospital, Ganga Market" onerror="this.remove()">
+<small>Inside Ramakrishna Mission Hospital</small>
+</div>
+</div>
+<div class="map rv-el rv-r"><iframe title="Dr. Tana Ananto on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Ramakrishna%20Mission%20Hospital%20Ganga%20Market%20Itanagar&amp;output=embed"></iframe></div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap">
+<div class="fg">
+<div><h4>Dr. Tana Ananto</h4><p>Dermatologist at Ramakrishna Mission Hospital, Ganga Market, Itanagar. Care for skin, hair and nails.</p></div>
+<div><h4>Explore</h4><a href="#conditions">Conditions</a><a href="#skin">Know your skin</a><a href="#doctor">Doctor</a><a href="#faq">Skin tips</a><a href="#visit">Visit</a></div>
+<div><h4>Contact</h4><a href="tel:+918837210190">8837210190</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Dr.+Tana+Ananto+Best+Dermatologist+in+Itanagar" target="_blank" rel="noopener">Ramakrishna Mission Hospital, Ganga Market, NH415, Itanagar, Arunachal Pradesh 791113</a><p style="margin-top:8px">Morning OPD, 8 am to 1 pm</p></div>
+</div>
+<div class="copy"><span>&copy; 2026 Dr. Tana Ananto. All rights reserved.</span><span>This website gives general information and is not a substitute for medical advice.</span></div>
+</div>
+</footer>
+
+<div class="fab">
+<a class="btn" href="tel:+918837210190"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call</a>
+<a class="btn ghost" href="https://wa.me/918837210190" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>WhatsApp</a>
+</div>
+
+<script>
+(function(){
+var d=document.documentElement;
+function $(s,c){return(c||document).querySelector(s)}
+function $$(s,c){return[].slice.call((c||document).querySelectorAll(s))}
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var canHover=matchMedia('(hover:hover)').matches;
+
+function split(el,mode){
+var n=0;
+function walk(node){
+var f=document.createDocumentFragment();
+[].slice.call(node.childNodes).forEach(function(c){
+if(c.nodeType===3){
+c.textContent.split(/(\s+)/).forEach(function(t){
+if(!t)return;
+if(/^\s+$/.test(t)){f.appendChild(document.createTextNode(' '));return}
+if(mode==='c'){
+var w=document.createElement('span');w.className='wd';w.setAttribute('aria-hidden','true');
+t.split('').forEach(function(ch){var s=document.createElement('span');s.className='ch';s.style.setProperty('--i',n++);s.textContent=ch;w.appendChild(s)});
+f.appendChild(w);
+}else{
+var m=document.createElement('span');m.className='wm';m.setAttribute('aria-hidden','true');
+var v=document.createElement('span');v.className='wv';v.style.setProperty('--w',n++);v.textContent=t;m.appendChild(v);f.appendChild(m);
+}
+});
+}else if(c.nodeType===1){var cl=c.cloneNode(false);cl.appendChild(walk(c));f.appendChild(cl)}
+});
+return f;
+}
+var label=el.textContent.replace(/\s+/g,' ').trim();
+var fr=walk(el);el.textContent='';el.setAttribute('aria-label',label);el.appendChild(fr);
+}
+$$('.split').forEach(function(e){split(e,'c')});
+$$('.sw').forEach(function(e){split(e,'w')});
+
+function scramble(el){
+var final=el.textContent,chars='ABCDEFGHIJKLMNOPQRSTUVWXYZ',t0=performance.now(),dur=1200;
+(function f(now){
+var p=Math.min((now-t0)/dur,1),out='';
+for(var i=0;i<final.length;i++){var c=final[i];out+=(c===' '||c==='·'||i<final.length*p)?c:chars[Math.floor(Math.random()*26)]}
+el.textContent=out;
+if(p<1)requestAnimationFrame(f);else el.textContent=final;
+})(t0);
+}
+function ready(){
+d.classList.add('ready');
+if(!reduce)$$('[data-scr]').forEach(function(e){setTimeout(function(){scramble(e)},300)});
+}
+
+/* loader */
+var L=$('#loader');
+if(!L||reduce){if(L)L.remove();ready()}
+else{
+var pct=$('#ldpct'),bar=$('#ldbar'),t0=performance.now(),dur=3000,loaded=document.readyState==='complete',fin=false;
+addEventListener('load',function(){loaded=true});
+(function tick(now){
+var p=Math.min((now-t0)/dur,1);
+if(!loaded)p=Math.min(p,.92);
+var e=1-Math.pow(1-p,2);
+bar.style.transform='scaleX('+e+')';
+pct.textContent=Math.round(e*100)+'%';
+if(p>=1&&!fin){
+fin=true;
+setTimeout(function(){
+L.classList.add('done');
+setTimeout(ready,650);
+setTimeout(function(){L.remove()},1800);
+},350);
+}else if(!fin)requestAnimationFrame(tick);
+})(t0);
+}
+
+/* hero pollen */
+var hero=$('#hero');
+if(!reduce){
+for(var i=0;i<16;i++){
+var p=document.createElement('i');p.className='pl';
+var s=3+Math.random()*6;
+p.style.cssText='left:'+(Math.random()*100).toFixed(1)+'%;bottom:-20px;width:'+s+'px;height:'+s+'px;animation-duration:'+(10+Math.random()*14).toFixed(1)+'s;animation-delay:-'+(Math.random()*14).toFixed(1)+'s';
+hero.appendChild(p);
+}
+}
+
+/* header, progress, timeline */
+var hd=$('#hd'),vpi=$('#vpi'),vpb=$('#vpb'),tl=$('#tl'),steps=$$('.ts'),ticking=false;
+function onScroll(){
+var y=window.scrollY||0,h=d.scrollHeight-innerHeight,pr=h>0?y/h:0;
+hd.classList.toggle('sc',y>30);
+vpi.style.transform='scaleY('+pr+')';
+vpb.style.transform='translateY('+(pr*140).toFixed(1)+'px)';
+var r=tl.getBoundingClientRect(),tp=Math.max(0,Math.min(1,(innerHeight*.65-r.top)/r.height));
+tl.style.setProperty('--tp',tp.toFixed(3));
+steps.forEach(function(s){var sr=s.getBoundingClientRect();s.classList.toggle('on',sr.top<innerHeight*.65)});
+}
+addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(function(){onScroll();ticking=false})}},{passive:true});
+onScroll();
+
+/* reveal */
+var io=new IntersectionObserver(function(es){
+es.forEach(function(e){
+if(!e.isIntersecting)return;
+e.target.classList.add('in');
+io.unobserve(e.target);
+});
+},{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+$$('.rv-el,.sw,.cd,.sk').forEach(function(el){io.observe(el)});
+
+/* hero parallax */
+var lays=$$('.lay',hero);
+if(canHover&&!reduce){
+hero.addEventListener('pointermove',function(e){
+var r=hero.getBoundingClientRect(),nx=(e.clientX-r.left)/r.width-.5,ny=(e.clientY-r.top)/r.height-.5;
+$$('.px',hero).forEach(function(p){
+var k=parseFloat(p.dataset.depth||0);
+p.style.setProperty('--tx',(nx*k).toFixed(1)+'px');
+p.style.setProperty('--ty',(ny*k).toFixed(1)+'px');
+});
+lays.forEach(function(l){var k=parseFloat(l.dataset.d||0);l.style.setProperty('--lx',(-nx*k).toFixed(1)+'px');l.style.setProperty('--ly',(-ny*k*.4).toFixed(1)+'px')});
+});
+}
+
+/* cursor glow, magnetic buttons, tilt */
+if(canHover&&!reduce){
+var cur=$('#cur'),cx=innerWidth/2,cy=innerHeight/2,tx=cx,ty=cy;
+addEventListener('pointermove',function(e){tx=e.clientX;ty=e.clientY;cur.classList.add('on')});
+document.addEventListener('pointerleave',function(){cur.classList.remove('on')});
+(function f(){cx+=(tx-cx)*.12;cy+=(ty-cy)*.12;cur.style.transform='translate('+cx.toFixed(1)+'px,'+cy.toFixed(1)+'px)';requestAnimationFrame(f)})();
+$$('.mag').forEach(function(b){
+b.addEventListener('pointermove',function(e){
+var r=b.getBoundingClientRect();
+b.style.setProperty('--mx',((e.clientX-r.left-r.width/2)*.2).toFixed(1)+'px');
+b.style.setProperty('--my',((e.clientY-r.top-r.height/2)*.28).toFixed(1)+'px');
+});
+b.addEventListener('pointerleave',function(){b.style.setProperty('--mx','0px');b.style.setProperty('--my','0px')});
+});
+$$('.cd').forEach(function(c){
+c.addEventListener('pointermove',function(e){
+var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+c.style.transform='perspective(900px) rotateY('+(x*7).toFixed(2)+'deg) rotateX('+(-y*7).toFixed(2)+'deg) translateY(-6px)';
+});
+c.addEventListener('pointerleave',function(){c.style.transform=''});
+});
+}
+
+/* button ripple */
+$$('.btn').forEach(function(b){
+b.addEventListener('click',function(e){
+if(reduce)return;
+var r=b.getBoundingClientRect(),s=Math.max(r.width,r.height)/2,x=document.createElement('span');
+x.className='rip';x.style.cssText='width:'+s+'px;height:'+s+'px;left:'+(e.clientX-r.left-s/2)+'px;top:'+(e.clientY-r.top-s/2)+'px';
+b.appendChild(x);setTimeout(function(){x.remove()},700);
+});
+});
+
+/* velocity marquee */
+var mq=$('#mq');
+if(mq&&!reduce){
+var x=0,last=window.scrollY,v=0;
+(function f(){
+var y=window.scrollY,dy=y-last;last=y;
+v+=(dy-v)*.08;
+x-=.7+Math.abs(v)*.35;
+var w=mq.scrollWidth/2;
+if(-x>=w)x+=w;
+mq.style.transform='translateX('+x.toFixed(1)+'px)';
+requestAnimationFrame(f);
+})();
+}
+
+/* skin layers */
+var sk=$('#sk'),skt=$('#skt'),tbs=$$('.tb');
+var info={1:'The epidermis is your outer shield. It protects against sun, germs and water loss, and renews itself constantly. Tanning, dryness, flaking and uneven tone show up here.',2:'The dermis holds collagen, blood vessels, oil glands and hair roots. Acne, hair fall and the signs of ageing involve this layer, which is why treatment starts with understanding it.',3:'The hypodermis is the deepest layer. It cushions and insulates the body and anchors the skin to the tissue beneath.'};
+function setLayer(a){
+sk.setAttribute('data-a',a);
+tbs.forEach(function(b){b.classList.toggle('on',b.dataset.a===String(a))});
+skt.textContent=info[a];
+skt.style.animation='none';void skt.offsetWidth;skt.style.animation='';
+}
+tbs.forEach(function(b){b.addEventListener('click',function(){setLayer(b.dataset.a)})});
+$$('.ly',sk).forEach(function(g){g.addEventListener('click',function(){setLayer(g.dataset.l)})});
+})();
+</script>
+</body>
+</html>
